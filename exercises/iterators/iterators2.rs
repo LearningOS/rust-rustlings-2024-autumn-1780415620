@@ -8,6 +8,8 @@
 
 // I AM NOT DONE
 
+use core::unicode::conversions::to_upper;
+
 // Step 1.
 // Complete the `capitalize_first` function.
 // "hello" -> "Hello"
@@ -15,7 +17,7 @@ pub fn capitalize_first(input: &str) -> String {
     let mut c = input.chars();
     match c.next() {
         None => String::new(),
-        Some(first) => ???,
+        Some(first) => first.to_uppercase()
     }
 }
 
