@@ -25,7 +25,7 @@ struct Team {
 }
 
 fn build_scores_table(results: String) -> HashMap<String, Team> {
-    // The name of the team is the key and its associated struct is the value.
+    // The name of the team is the key and its associated struct is the value
     let mut scores: HashMap<String, Team> = HashMap::new();
 
     for r in results.lines() {
